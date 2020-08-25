@@ -155,9 +155,11 @@ function dragula (initialContainers, options) {
     if (drake.dragging && _mirror) {
       return;
     }
+    /*
     if (isContainer(item)) {
       return; // don't drag container itself
     }
+     */
     var handle = item;
     while (getParent(item) && isContainer(getParent(item)) === false) {
       if (o.invalid(item, handle)) {
